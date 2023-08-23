@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* PRIMARY COLORS */
+  --peach: hsl(11, 73%, 66%);
+  --black: hsl(270, 3%, 11%);
+  --white: hsl(0, 0%, 100%);
+
+  /* SECONDARY COLORS */
+  --lightPeach: hsl(11, 100%, 80%);
+  --darkGrey: hsl(264, 5%, 20%);
+  --lightGrey: hsl(210, 17%, 95%);
+}
+
+@layer base {
+  @font-face {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    src: url("/public/fonts/Jost-Regular.ttf") format(".ttf");
+  }
+  @font-face {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    src: url("/public/fonts/Jost-Italic.ttf") format(".ttf");
+  }
+  @font-face {
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    src: url("/public/fonts/Jost-Medium.ttf") format(".ttf");
+  }
+  @font-face {
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    src: url("/public/fonts/Jost-Bold.ttf") format(".ttf");
+  }
+}

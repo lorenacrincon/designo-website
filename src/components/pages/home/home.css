@@ -1,0 +1,88 @@
+.home-header {
+  background-image: url(../../../assets/images/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--peach);
+  height: 100%;
+  overflow: hidden;
+}
+
+.home-title {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+p {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.white-btn {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 18px 25px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.box {
+  color: var(--white);
+  border-radius: 15px;
+  width: 100%;
+  position: relative;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  z-index: -2;
+}
+
+.web-design-box,
+.app-design-box,
+.graphic-design-box {
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+.web-design-box {
+  background-image: url(../../../assets/images/home/mobile/image-web-design.jpg);
+}
+
+.app-design-box {
+  background-image: url(../../../assets/images/home/mobile/image-app-design.jpg);
+}
+
+.graphic-design-box {
+  background-image: url(../../../assets/images/home/mobile/image-graphic-design.jpg);
+}
+
+.box-title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+}
+
+.box-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.illustration-bg {
+  background-image: url(../../../assets/images/home/desktop/bg-pattern-hero-home.svg);
+  background-size: contain;
+}

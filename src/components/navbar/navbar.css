@@ -1,0 +1,13 @@
+.nav-text {
+  color: #fff;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 104.167% */
+  letter-spacing: 2px;
+}
+
+.black-bg {
+  background-color: var(--black);
+}
