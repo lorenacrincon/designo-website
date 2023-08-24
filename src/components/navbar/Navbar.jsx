@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assets/images/shared/desktop/logo-dark.png";
-import { motion, AnimatePresence, MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Navbar() {
   const [mobileNav, setMobileNav] = useState(false);
@@ -14,35 +14,28 @@ function Navbar() {
   };
 
   return (
-    <header className=" w-full z-30 bg-white">
-      <nav className="">
-        <div className="max-w-full mx-auto px-5 py-9 relative">
+    <>
+      <nav className="z-30 bg-white">
+        <div className="mx-6 py-9 relative md:px-0 md:mx-10 md:py-14">
           <div className="flex items-center justify-between">
             <a href="#">
-              <img className="w-[202px]" src={logo} alt="Logo" />
+              <img className="w-[202px] " src={logo} alt="Logo" />
             </a>
-            <div className="hidden xl:flex nav-deco absolute z-50"></div>
-            <div className="hidden md:flex md:justify-center md:items-center text-white nav-text gap-10 navbar-bg  my-navbar ">
+            <div className="hidden md:flex md:justify-end md:items-center text-white nav-text gap-10 md:gap-10">
               <a href="#" activeClassName="active">
-                <span className="hidden lg:inline me-4 font-bold">00</span>
-                HOME
+                OUR COMPANY
               </a>
 
               <a href="#" activeClassName="active">
-                <span className="hidden lg:inline me-4 font-bold">01</span>
-                DESTINATION
-              </a>
-
-              <a href="#" activeClassName="active">
-                <span className="hidden lg:inline me-4 font-bold">03</span>
-                CREW
+                LOCATIONS
               </a>
 
               <a href="#" activeClassName="active">
                 <span className="hidden lg:inline me-4 font-bold">03</span>
-                TECHNOLOGY
+                CONTACT
               </a>
             </div>
+
             <motion.button
               initial="hide"
               animate={mobileNav ? "show" : "hide"}
@@ -114,7 +107,7 @@ function Navbar() {
           </div>
         )}
       </nav>
-    </header>
+    </>
   );
 }
 

@@ -7,15 +7,14 @@
   overflow: hidden;
 }
 
-.home-title {
+.home-title,
+.contact-title {
   font-size: 32px;
   line-height: 36px;
 }
 
 .paragraph-text {
   font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 25px;
 }
 
@@ -105,4 +104,39 @@
 
 .light-text {
   color: var(--lightGrey);
+}
+
+@media only screen and (min-width: 768px) {
+  .home-title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .paragraph-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .box-title {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+  .web-design-box {
+    background-image: url(".././assets/images/home/tablet/image-web-design.jpg");
+  }
+
+  .app-design-box {
+    background-image: url(".././assets/images/home/tablet/image-app-design.jpg");
+  }
+
+  .graphic-design-box {
+    background-image: url(".././assets/images/home/tablet/image-graphic-design.jpg");
+  }
+
+  .contact-title {
+    font-size: 40px;
+  }
+  .contact-box {
+    background-size: 45%;
+    background-position: 0px -90px;
+    border-radius: 15px;
+  }
 }

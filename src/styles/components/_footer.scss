@@ -9,5 +9,9 @@ footer {
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 2px;
+    color: var(--lightGrey);
   }
+}
+
+@media only screen and (min-width: 768px) {
 }

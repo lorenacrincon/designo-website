@@ -1,13 +1,19 @@
 .nav-text {
-  color: #fff;
   font-family: Jost;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; /* 104.167% */
+  line-height: 25px;
   letter-spacing: 2px;
 }
 
 .black-bg {
   background-color: var(--black);
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-text {
+    color: var(--darkGrey);
+    font-size: 14px;
+  }
 }
