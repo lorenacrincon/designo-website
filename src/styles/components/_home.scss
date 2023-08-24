@@ -1,5 +1,5 @@
 .home-header {
-  background-image: url(../../../assets/images/home/desktop/bg-pattern-hero-home.svg);
+  background-image: url(".././assets/images/home/desktop/bg-pattern-hero-home.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--peach);
@@ -12,7 +12,7 @@
   line-height: 36px;
 }
 
-p {
+.paragraph-text {
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -58,15 +58,15 @@ p {
 }
 
 .web-design-box {
-  background-image: url(../../../assets/images/home/mobile/image-web-design.jpg);
+  background-image: url(".././assets/images/home/mobile/image-web-design.jpg");
 }
 
 .app-design-box {
-  background-image: url(../../../assets/images/home/mobile/image-app-design.jpg);
+  background-image: url(".././assets/images/home/mobile/image-app-design.jpg");
 }
 
 .graphic-design-box {
-  background-image: url(../../../assets/images/home/mobile/image-graphic-design.jpg);
+  background-image: url(".././assets/images/home/mobile/image-graphic-design.jpg");
 }
 
 .box-title {
@@ -83,6 +83,26 @@ p {
 }
 
 .illustration-bg {
-  background-image: url(../../../assets/images/home/desktop/bg-pattern-hero-home.svg);
+  background-image: url(".././assets/images/home/desktop/bg-pattern-hero-home.svg");
   background-size: contain;
+}
+
+.contact-box {
+  background-image: url(".././assets/images/home/desktop/bg-pattern-hero-home.svg");
+  background-color: var(--peach);
+  background-size: 80%;
+  background-position: 60px -80px;
+  border-radius: 15px;
+}
+
+.contact-content {
+  width: 100%;
+}
+
+.dark-text {
+  color: var(--darkGrey);
+}
+
+.light-text {
+  color: var(--lightGrey);
 }

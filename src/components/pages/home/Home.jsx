@@ -14,7 +14,7 @@ function Home() {
               <h1 className="home-title font-medium">
                 Award-winning custom designs and digital branding solutions
               </h1>
-              <p>
+              <p className="paragraph-text">
                 With over 10 years in the industry, we are experienced in
                 creating fully responsive websites, app design, and engaging
                 brand experiences. Find out more about our services.
@@ -47,14 +47,14 @@ function Home() {
           </div>
         </section>
         <section>
-          <div className="mx-6 flex flex-col justify-center items-center text-center gap-7">
+          <div className="mx-6 flex flex-col justify-center items-center text-center gap-7 pb-60">
             <div>
               <img
                 className="mx-auto illustration-bg"
                 src={passionate}
                 alt="passionate"
               />
-              <p>
+              <p className="dark-text paragraph-text">
                 Each project starts with an in-depth brand research to ensure we
                 only create products that serve a purpose. We merge art, design,
                 and technology into exciting new solutions.
@@ -66,7 +66,7 @@ function Home() {
                 src={resourceful}
                 alt="friendly"
               />
-              <p>
+              <p className="dark-text paragraph-text">
                 We are a group of enthusiastic folks who know how to put people
                 first. Our success depends on our customers, and we strive to
                 give them the best experience a company can provide.
@@ -78,11 +78,23 @@ function Home() {
                 src={friendly}
                 alt="friendly"
               />
-              <p>
+              <p className="dark-text paragraph-text">
                 Each project starts with an in-depth brand research to ensure we
                 only create products that serve a purpose. We merge art, design,
                 and technology into exciting new solutions.
               </p>
+            </div>
+          </div>
+        </section>
+        <section className="relative">
+          <div className="absolute z-50 contact-box text-white mx-6 py-12 -top-40">
+            <div className="contact-content font-jost text-center space-y-6 px-8 ">
+              <h3 className="home-title ">Let’s talk about your project</h3>
+              <p className="paragraph-text">
+                Ready to take it to the next level? Contact us today and find
+                out how our expertise can help your business grow.
+              </p>
+              <button className="white-btn">GET IN TOUCH</button>
             </div>
           </div>
         </section>

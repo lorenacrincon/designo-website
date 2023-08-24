@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import "../src/components/pages/home/home.css";
-import "../src/components/navbar/navbar.css";
+import "./App.scss";
 import Navbar from "./components/navbar/Navbar";
 import Home from "../src/components/pages/home/Home";
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [selectedLink, setSelectedLink] = useState("");
@@ -15,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </>
   );
 }
