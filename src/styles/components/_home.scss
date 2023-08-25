@@ -21,12 +21,13 @@
 .white-btn {
   background-color: var(--white);
   color: var(--black);
-  padding: 18px 25px;
+  width: 152px;
+  height: 56px;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 500;
-  line-height: normal;
   letter-spacing: 1px;
+  margin: 0px !important;
 }
 
 .box {
@@ -106,6 +107,7 @@
   color: var(--lightGrey);
 }
 
+//MD SCREENS//
 @media only screen and (min-width: 768px) {
   .home-title {
     font-size: 48px;
@@ -138,5 +140,27 @@
     background-size: 45%;
     background-position: 0px -90px;
     border-radius: 15px;
+  }
+}
+
+//XL SCREENS//
+@media only screen and (min-width: 1280px) {
+  .home-header {
+    background-position: right;
+  }
+  .web-design-box {
+    background-image: url(".././assets/images/home/desktop/image-web-design-large.jpg");
+  }
+
+  .app-design-box {
+    background-image: url(".././assets/images/home/desktop/image-app-design.jpg");
+  }
+
+  .graphic-design-box {
+    background-image: url(".././assets/images/home/desktop/image-graphic-design.jpg");
+  }
+  .contact-box {
+    background-size: 28%;
+    background-position: -130px 130px;
   }
 }

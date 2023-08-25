@@ -9,8 +9,8 @@ import instagram from "../../assets/images/shared/desktop/icon-instagram.svg";
 function Footer() {
   return (
     <>
-      <footer className="relative  font-jost text-white text-center pb-20 px-6 md:px-10 pt-64 z-0 ">
-        <div>
+      <footer className="relative font-jost text-white text-center pb-20 px-6 md:px-10 pt-64 z-0 xl:pt-40">
+        <div className="max-w-6xl mx-auto xl:px-10">
           <div className="md:flex justify-between items-center md:py-10">
             <div>
               <img
@@ -42,12 +42,12 @@ function Footer() {
             </div>
             <div className="opacity-50 ">
               <p>
-                <span className="font-bold ">Contact Us (Central Office)</span>
+                <span className="font-bold">Contact Us (Central Office)</span>
                 <br />
                 P : +1 253-863-8967 <br />M : contact@designo.co
               </p>
             </div>
-            <div className="pt-5  flex justify-center md:items-end gap-6 ">
+            <div className="pt-5  flex justify-center md:items-end gap-5 ">
               <a href="#">
                 <img src={facebook} alt="facebook" />
               </a>

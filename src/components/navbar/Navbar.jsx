@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="z-30 bg-white">
+      <nav className="max-w-6xl mx-auto z-30 bg-white">
         <div className="mx-6 py-9 relative md:px-0 md:mx-10 md:py-14">
           <div className="flex items-center justify-between">
             <a href="#">
@@ -31,7 +31,6 @@ function Navbar() {
               </a>
 
               <a href="#" activeClassName="active">
-                <span className="hidden lg:inline me-4 font-bold">03</span>
                 CONTACT
               </a>
             </div>
