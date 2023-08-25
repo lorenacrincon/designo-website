@@ -1,0 +1,28 @@
+.web-design-header {
+  background-image: url(".././assets/images/web-design/desktop/bg-pattern-intro-web.svg");
+  background-color: var(--peach);
+  background-size: 240%;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.lightPeach-bg {
+  background-color: hsl(11, 100%, 80%, 0.4);
+}
+
+.card-title {
+  color: var(--peach);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .web-design-header {
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
