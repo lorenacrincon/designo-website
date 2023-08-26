@@ -1,0 +1,30 @@
+.about-header {
+  background-image: url(".././assets/images/about/mobile/bg-pattern-hero-about-mobile.svg");
+  background-color: var(--peach);
+  background-size: 200%;
+  background-position: -120px -70px;
+  background-repeat: no-repeat;
+}
+
+.peach-text {
+  color: var(--peach);
+}
+
+.talent-bg {
+  background-image: url(".././assets/images/shared/desktop/bg-pattern-three-circles.svg");
+  background-color: var(--lightPeach);
+  background-size: 150%;
+
+  background-repeat: no-repeat;
+}
+
+.peach-btn {
+  background-color: var(--peach);
+  color: var(--white);
+  width: 152px;
+  height: 56px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}

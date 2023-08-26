@@ -82,21 +82,33 @@
   letter-spacing: 5px;
 }
 
-.illustration-bg {
+.right-circle-bg {
+  background-image: url(".././assets/images/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-size: contain;
+}
+
+.left-circle-bg {
+  background-image: url(".././assets/images/shared/desktop/bg-pattern-small-circle.svg");
+  background-size: contain;
+}
+
+.bottom-circle-bg {
+  background-image: url(".././assets/images/contact/desktop/bg-pattern-hero-desktop.svg");
+  background-size: contain;
+}
+
+.top-circle-bg {
   background-image: url(".././assets/images/home/desktop/bg-pattern-hero-home.svg");
   background-size: contain;
 }
 
 .contact-box {
-  background-image: url(".././assets/images/home/desktop/bg-pattern-hero-home.svg");
+  background-image: url(".././assets/images/shared/mobile/bg-pattern-design-pages-intro-mobile.svg");
   background-color: var(--peach);
-  background-size: 80%;
-  background-position: 60px -80px;
+  background-size: 200%;
   border-radius: 15px;
-}
-
-.contact-content {
-  width: 100%;
+  background-position: -270px;
+  background-repeat: no-repeat;
 }
 
 .dark-text {
@@ -105,6 +117,14 @@
 
 .light-text {
   color: var(--lightGrey);
+}
+
+.bg-shape {
+  background-color: var(--lightGrey);
+  width: 1006px;
+  height: 594px;
+  opacity: 0.5;
+  border-radius: 297px 297px 297px 0px;
 }
 
 //MD SCREENS//
@@ -136,10 +156,11 @@
   .contact-title {
     font-size: 40px;
   }
+
   .contact-box {
-    background-size: 45%;
-    background-position: 0px -90px;
-    border-radius: 15px;
+    background-image: url(".././assets/images/shared/tablet/bg-pattern-design-pages-intro-tablet.svg");
+    background-size: 150%;
+    background-position: -150px;
   }
 }
 
@@ -160,7 +181,8 @@
     background-image: url(".././assets/images/home/desktop/image-graphic-design.jpg");
   }
   .contact-box {
-    background-size: 28%;
-    background-position: -130px 130px;
+    background-image: url(".././assets/images/shared/desktop/bg-pattern-call-to-action.svg");
+    background-size: cover;
+    background-position: 0px;
   }
 }
