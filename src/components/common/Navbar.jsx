@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/shared/desktop/logo-dark.png";
 import { motion } from "framer-motion";
 
@@ -15,16 +16,16 @@ function Navbar() {
 
   return (
     <>
-      <nav className="max-w-6xl mx-auto z-30 bg-white">
+      <nav className="max-w-6xl mx-auto relative z-10 bg-white">
         <div className="mx-6 py-9 relative md:px-0 md:mx-10 md:py-14">
           <div className="flex items-center justify-between">
-            <a href="#">
+            <NavLink to="/">
               <img className="w-[202px] " src={logo} alt="Logo" />
-            </a>
+            </NavLink>
             <div className="hidden md:flex md:justify-end md:items-center text-white nav-text gap-10 md:gap-10">
-              <a href="#" activeClassName="active">
+              <NavLink to="/about-us" activeClassName="active">
                 OUR COMPANY
-              </a>
+              </NavLink>
 
               <a href="#" activeClassName="active">
                 LOCATIONS
@@ -81,15 +82,19 @@ function Navbar() {
         </div>
       </nav>
 
-      <nav className="absolute w-full z-10">
+      <nav className="absolute w-full z-20">
         {mobileNav && (
           <div className="md:hidden nav-text flex black-bg py-12 ">
             <div>
               <ul className="list-none grid gap-8">
                 <li>
-                  <a href="#" className="px-6" onClick={handleClose}>
+                  <NavLink
+                    to="/about-us"
+                    className="px-6"
+                    onClick={handleClose}
+                  >
                     OUR COMPANY
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
                   <a href="#" className="px-6" onClick={handleClose}>

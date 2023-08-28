@@ -28,3 +28,29 @@
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+//MD SCREENS//
+@media only screen and (min-width: 768px) {
+  .about-header {
+    background-size: 250%;
+    background-position: -1350px -400px;
+    background-repeat: no-repeat;
+  }
+  .talent-bg {
+    background-size: 80%;
+    background-position: right bottom;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .about-header {
+    background-image: url(".././assets/images/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .talent-bg {
+    background-size: cover;
+    background-position: -100px;
+  }
+}
