@@ -88,7 +88,7 @@ function Home() {
           </div>
         </section>
         <section className="relative z-10">
-          <div className="mx-6 md:mx-10 flex flex-wrap  justify-center items-center text-center md:text-start gap-20 pb-60 xl:pb-80 xl:flex-nowrap xl:text-center xl:gap-12">
+          <div className="mx-6 md:mx-10 flex flex-wrap  justify-center items-center text-center md:text-start gap-20 pb-80 xl:flex-nowrap xl:text-center xl:gap-12">
             <div className="space-y-6 md:flex md:gap-14 xl:flex-col xl:space-y-0 xl:gap-5">
               <img
                 className="mx-auto left-circle-bg"

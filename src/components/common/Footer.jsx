@@ -9,7 +9,7 @@ import instagram from "../../assets/images/shared/desktop/icon-instagram.svg";
 function Footer() {
   return (
     <>
-      <footer className="relative font-jost text-white text-center pb-20 px-6 md:px-10 pt-64 z-0 xl:pt-40">
+      <footer className="relative font-jost text-white text-center pb-20 px-6 md:px-10 pt-32 md:pt-24 z-0 ">
         <div className="max-w-6xl mx-auto xl:px-10">
           <div className="md:flex justify-between items-center md:py-10">
             <div>

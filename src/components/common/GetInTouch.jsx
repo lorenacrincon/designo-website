@@ -2,7 +2,7 @@ import React from "react";
 
 function GetInTouch() {
   return (
-    <div className="absolute z-50 contact-box text-white mx-6 md:mx-10 py-12 md:py-16 -top-40  xl:w-[1072px]">
+    <div className="absolute z-50 contact-box text-white mx-6 md:mx-10 py-12 md:py-16 -top-64  xl:w-[1072px]">
       <div className=" font-jost text-center space-y-6 px-8 md:px-36 xl:flex xl:flex-row xl:justify-between xl:items-center xl:text-start xl:px-20">
         <div className="basis-1/2 space-y-4">
           <h3 className="contact-title md:px-10 xl:px-0">

@@ -27,13 +27,13 @@ function Navbar() {
                 OUR COMPANY
               </NavLink>
 
-              <a href="#" activeClassName="active">
+              <NavLink to="/locations" activeClassName="active">
                 LOCATIONS
-              </a>
+              </NavLink>
 
-              <a href="#" activeClassName="active">
+              <NavLink to="/contact" activeClassName="active">
                 CONTACT
-              </a>
+              </NavLink>
             </div>
 
             <motion.button
@@ -97,14 +97,18 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="px-6" onClick={handleClose}>
+                  <NavLink
+                    to="/locations"
+                    className="px-6"
+                    onClick={handleClose}
+                  >
                     LOCATIONS
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a href="#" className="px-6" onClick={handleClose}>
+                  <NavLink to="/contact" className="px-6" onClick={handleClose}>
                     CONTACT
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>

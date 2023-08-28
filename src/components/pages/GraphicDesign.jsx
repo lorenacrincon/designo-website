@@ -39,7 +39,7 @@ function GraphicDesign() {
           ))}
         </section>
         <section className="relative z-10 max-w-6xl mx-auto">
-          <div className="pt-10 pb-60 mx-6 flex flex-wrap justify-center items-center text-center gap-7 md:mx-10 xl:flex-nowrap">
+          <div className="pt-10 pb-80 mx-6 flex flex-wrap justify-center items-center text-center gap-7 md:mx-10 xl:flex-nowrap">
             <Link
               to="/app-design"
               className="w-full"

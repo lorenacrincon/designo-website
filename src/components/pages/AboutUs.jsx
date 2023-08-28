@@ -52,9 +52,9 @@ function AboutUs() {
             />
             <img className=" hidden xl:block" src={talentDesktop} />
             <div className="talent-bg text-center py-16 px-6 space-y-6 md:flex md:flex-col md:justify-center md:px-20 xl:text-start">
-              <h1 className="home-title font-medium peach-text">
+              <h3 className="home-title font-medium peach-text">
                 World-class talent
-              </h1>
+              </h3>
               <div className="paragraph-text dark-text space-y-5">
                 <p>
                   We are a crew of strategists, problem-solvers, and
@@ -80,7 +80,7 @@ function AboutUs() {
               <img
                 className="mx-auto top-circle-bg"
                 src={canada}
-                alt="passionate"
+                alt="Canada"
               />
               <div className="space-y-8">
                 <h4 className="dark-text font-medium text-[20px] tracking-[5px]">
@@ -93,7 +93,7 @@ function AboutUs() {
               <img
                 className="mx-auto left-circle-bg"
                 src={australia}
-                alt="resourceful"
+                alt="Australia"
               />
               <div className="space-y-8">
                 <h4 className="dark-text font-medium text-[20px] tracking-[5px]">
@@ -106,7 +106,7 @@ function AboutUs() {
               <img
                 className="mx-auto bottom-circle-bg"
                 src={unitedKingdom}
-                alt="friendly"
+                alt="UK"
               />
               <div className="space-y-8">
                 <h4 className="dark-text font-medium text-[20px] tracking-[5px]">
@@ -118,7 +118,7 @@ function AboutUs() {
           </div>
         </section>
         <section className="relative z-10">
-          <div className="text-white font-jost h-full overflow-hidden mb-60 md:rounded-[15px] md:mx-10 md:mt-8 xl:flex">
+          <div className="text-white font-jost h-full overflow-hidden mb-80 md:rounded-[15px] md:mx-10 md:mt-8 xl:flex">
             <img className="w-full md:hidden" src={realDealMobile} />
             <img
               className="w-full hidden md:block xl:hidden"
@@ -129,9 +129,9 @@ function AboutUs() {
               src={realDealDesktop}
             />
             <div className="talent-bg text-center py-16 px-6 space-y-6 md:flex md:flex-col md:justify-center md:px-20 xl:text-start">
-              <h1 className="home-title font-medium peach-text">
+              <h3 className="home-title font-medium peach-text">
                 The real deal
-              </h1>
+              </h3>
               <div className="paragraph-text dark-text space-y-5">
                 <p>
                   As strategic partners in our clients’ businesses, we are ready

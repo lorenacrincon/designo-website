@@ -8,6 +8,8 @@ import WebDesign from "./components/pages/WebDesign";
 import AppDesign from "./components/pages/AppDesign";
 import GraphicDesign from "./components/pages/GraphicDesign";
 import AboutUs from "./components/pages/AboutUs";
+import Locations from "./components/pages/Locations";
+import Contact from "./components/pages/Contact";
 
 function App() {
   const [selectedLink, setSelectedLink] = useState("");
@@ -21,6 +23,8 @@ function App() {
         <Route path="/app-design" element={<AppDesign />} />
         <Route path="/graphic-design" element={<GraphicDesign />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/locations" element={<Locations />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>
