@@ -15,6 +15,7 @@ import canada from "../../assets/images/shared/desktop/illustration-canada.svg";
 import australia from "../../assets/images/shared/desktop/illustration-australia.svg";
 import unitedKingdom from "../../assets/images/shared/desktop/illustration-united-kingdom.svg";
 import GetInTouch from "../common/GetInTouch";
+import { LocationBtn } from "../common/Buttons";
 
 function AboutUs() {
   return (
@@ -86,7 +87,7 @@ function AboutUs() {
                 <h4 className="dark-text font-medium text-[20px] tracking-[5px]">
                   CANADA
                 </h4>
-                <button className="peach-btn">GET IN TOUCH</button>
+                <LocationBtn />
               </div>
             </div>
             <div className="space-y-6 md:grid md:gap-3 ">
@@ -99,7 +100,7 @@ function AboutUs() {
                 <h4 className="dark-text font-medium text-[20px] tracking-[5px]">
                   AUSTRALIA
                 </h4>
-                <button className="peach-btn">GET IN TOUCH</button>
+                <LocationBtn />
               </div>
             </div>
             <div className="space-y-6 md:grid md:gap-3 ">
@@ -112,7 +113,7 @@ function AboutUs() {
                 <h4 className="dark-text font-medium text-[20px] tracking-[5px]">
                   UNITED KINGDOM
                 </h4>
-                <button className="peach-btn">GET IN TOUCH</button>
+                <LocationBtn />
               </div>
             </div>
           </div>

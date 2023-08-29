@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/shared/desktop/logo-light.png";
 import facebook from "../../assets/images/shared/desktop/icon-facebook.svg";
 import youtube from "../../assets/images/shared/desktop/icon-youtube.svg";
@@ -12,20 +12,20 @@ function Footer() {
       <footer className="relative font-jost text-white text-center pb-20 px-6 md:px-10 pt-32 md:pt-24 z-0 ">
         <div className="max-w-6xl mx-auto xl:px-10">
           <div className="md:flex justify-between items-center md:py-10">
-            <div>
+            <Link to="/">
               <img
                 className="w-[202px] mx-auto pb-6 md:pb-0"
                 src={logo}
                 alt="Light Logo"
               />
               <hr className="md:hidden opacity-20" />
-            </div>
+            </Link>
             <div>
-              <ul className="py-8 space-y-6 md:space-y-0 md:flex md:py-0 md:gap-12 ">
-                <li>OUR COMPANY</li>
-                <li>LOCATIONS</li>
-                <li>CONTACT</li>
-              </ul>
+              <div className="py-8 space-y-6 md:space-y-0 md:flex md:py-0 md:gap-12 footer-link">
+                <Link to="/about-us">OUR COMPANY</Link>
+                <Link to="/locations">LOCATIONS</Link>
+                <Link to="/contact">CONTACT</Link>
+              </div>
             </div>
           </div>
           <hr className="hidden md:block opacity-20" />

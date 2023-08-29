@@ -3,6 +3,7 @@ import { web } from "../../data.json";
 import { Link } from "react-router-dom";
 import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
 import GetInTouch from "../common/GetInTouch";
+import { motion } from "framer-motion";
 
 function WebDesign() {
   const [webdesigns] = useState(web);
@@ -40,7 +41,11 @@ function WebDesign() {
         </section>
         <section className="relative z-10 max-w-6xl mx-auto">
           <div className="pt-10 pb-80 mx-6 flex flex-wrap justify-center items-center text-center gap-7 md:mx-10 xl:flex-nowrap">
-            <Link
+            <motion.a
+              whileHover={{
+                backgroundColor: "hsl(11, 73%, 66%, 0.5)",
+                borderRadius: "15px",
+              }}
               to="/app-design"
               className="w-full"
               onClick={() => {
@@ -48,14 +53,18 @@ function WebDesign() {
               }}
             >
               <div className="box app-design-box py-[90px] space-y-2">
-                <h3 className="box-title">APP DESIGN</h3>
+                <h3 className=" box-title">APP DESIGN</h3>
                 <div className="flex justify-center items-center gap-4">
                   <p className="box-subtitle">VIEW PROJECTS</p>
                   <img src={arrow} alt="arrow" />
                 </div>
               </div>
-            </Link>
-            <Link
+            </motion.a>
+            <motion.a
+              whileHover={{
+                backgroundColor: "hsl(11, 73%, 66%,0.5)",
+                borderRadius: "15px",
+              }}
               to="/graphic-design"
               className="w-full"
               onClick={() => {
@@ -69,7 +78,7 @@ function WebDesign() {
                   <img src={arrow} alt="arrow" />
                 </div>
               </div>
-            </Link>
+            </motion.a>
           </div>
         </section>
         <section className="relative z-10 ">

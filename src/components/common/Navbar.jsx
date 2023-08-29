@@ -20,21 +20,38 @@ function Navbar() {
         <div className="mx-6 py-9 relative md:px-0 md:mx-10 md:py-14">
           <div className="flex items-center justify-between">
             <NavLink to="/">
-              <img className="w-[202px] " src={logo} alt="Logo" />
+              <motion.img
+                whileHover={{ scale: 1.1 }}
+                className="w-[202px] "
+                src={logo}
+                alt="Logo"
+              />
             </NavLink>
-            <div className="hidden md:flex md:justify-end md:items-center text-white nav-text gap-10 md:gap-10">
-              <NavLink to="/about-us" activeClassName="active">
+            <ul className="hidden md:flex md:justify-end md:items-center text-white nav-text gap-10 md:gap-10">
+              <NavLink
+                to="/about-us"
+                className="hover-underline-animation"
+                activeClassName="active"
+              >
                 OUR COMPANY
               </NavLink>
 
-              <NavLink to="/locations" activeClassName="active">
+              <NavLink
+                to="/locations"
+                className="hover-underline-animation"
+                activeClassName="active"
+              >
                 LOCATIONS
               </NavLink>
 
-              <NavLink to="/contact" activeClassName="active">
+              <NavLink
+                to="/contact"
+                className="hover-underline-animation"
+                activeClassName="active"
+              >
                 CONTACT
               </NavLink>
-            </div>
+            </ul>
 
             <motion.button
               initial="hide"

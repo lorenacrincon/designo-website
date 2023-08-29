@@ -1,16 +1,18 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import GetInTouch from "../common/GetInTouch";
+import { LearnMoreBtn } from "../common/Buttons";
 import phone from "../../assets/images/home/desktop/image-hero-phone.png";
 import passionate from "../../assets/images/home/desktop/illustration-passionate.svg";
 import resourceful from "../../assets/images/home/desktop/illustration-resourceful.svg";
 import friendly from "../../assets/images/home/desktop/illustration-friendly.svg";
 import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
-import GetInTouch from "../common/GetInTouch";
+
+import webDesignSmall from "../../assets/images/home/mobile/image-web-design.jpg";
+import webDesignmedium from "../../assets/images/home/tablet/image-web-design.jpg";
+import webDesignLarge from "../../assets/images/home/desktop/image-web-design-large.jpg";
 
 function Home() {
-  const [shouldFadeOut, setShouldFadeOut] = useState(false);
-
   return (
     <>
       <header className="max-w-6xl mx-auto relative z-10">
@@ -25,7 +27,7 @@ function Home() {
                 creating fully responsive websites, app design, and engaging
                 brand experiences. Find out more about our services.
               </p>
-              <button className="white-btn ">LEARN MORE</button>
+              <LearnMoreBtn />
             </div>
           </div>
           <div className="absolute top-90 md:top-80 md:inset-x-8 xl:flex justify-end xl:-inset-x-20 xl:-top-4">
@@ -35,26 +37,34 @@ function Home() {
       </header>
       <main className="font-jost max-w-6xl mx-auto ">
         <div className="hidden xl:block bg-shape left-0 top-96 absolute z-0"></div>
-        <section className="relative z-10">
+        <section className="relative z-40">
           <div className="py-28 mx-6 md:mx-10 flex flex-col justify-center items-center text-center gap-7 xl:grid xl:grid-cols-2 xl:py-36">
-            <Link
+            <motion.a
+              whileHover={{
+                backgroundColor: "hsl(11, 73%, 66%,0.6)",
+                borderRadius: "15px",
+              }}
               to="/web-design"
-              className="w-full h-full"
+              className="w-full h-full relative"
               onClick={(e) => {
                 window.scrollTo(0, 0);
               }}
             >
-              <motion.div className="flex flex-col justify-center items-center box web-design-box py-[90px] space-y-2 xl:h-full">
+              <div className="flex flex-col justify-center items-center box web-design-box py-[90px] space-y-2 xl:h-full">
                 <h3 className="box-title">WEB DESIGN</h3>
                 <div className="flex justify-center items-center gap-4">
                   <p className="box-subtitle">VIEW PROJECTS</p>
                   <img src={arrow} alt="arrow" />
                 </div>
-              </motion.div>
-            </Link>
+              </div>
+            </motion.a>
 
             <div className="xl:py-0 w-full flex flex-wrap gap-7">
-              <Link
+              <motion.a
+                whileHover={{
+                  backgroundColor: "hsl(11, 73%, 66%,0.6)",
+                  borderRadius: "15px",
+                }}
                 to="/app-design"
                 className="w-full"
                 onClick={() => {
@@ -68,8 +78,12 @@ function Home() {
                     <img src={arrow} alt="arrow" />
                   </div>
                 </div>
-              </Link>
-              <Link
+              </motion.a>
+              <motion.a
+                whileHover={{
+                  backgroundColor: "hsl(11, 73%, 66%,0.6)",
+                  borderRadius: "15px",
+                }}
                 to="/graphic-design"
                 className="w-full"
                 onClick={() => {
@@ -83,7 +97,7 @@ function Home() {
                     <img src={arrow} alt="arrow" />
                   </div>
                 </div>
-              </Link>
+              </motion.a>
             </div>
           </div>
         </section>
