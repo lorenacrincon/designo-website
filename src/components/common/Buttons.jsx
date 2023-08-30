@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const btnHover = {
-  color: "white",
+  color: "var(--white)",
   backgroundColor: "var(--lightPeach)",
 };
 
@@ -43,7 +43,7 @@ export const SubmitBtn = () => {
     <motion.button
       whileHover={btnHover}
       className="white-btn self-end"
-      type="button"
+      type="submit"
     >
       SUBMIT
     </motion.button>

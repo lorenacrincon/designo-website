@@ -23,27 +23,15 @@ function Navbar() {
               <img className="w-[202px] " src={logo} alt="Logo" />
             </NavLink>
             <ul className="hidden md:flex md:justify-end md:items-center text-white nav-text gap-10 md:gap-10">
-              <NavLink
-                to="/about-us"
-                className="hover-underline-animation"
-                activeClassName="active"
-              >
+              <NavLink to="/about-us" className="hover-underline-animation">
                 OUR COMPANY
               </NavLink>
 
-              <NavLink
-                to="/locations"
-                className="hover-underline-animation"
-                activeClassName="active"
-              >
+              <NavLink to="/locations" className="hover-underline-animation">
                 LOCATIONS
               </NavLink>
 
-              <NavLink
-                to="/contact"
-                className="hover-underline-animation"
-                activeClassName="active"
-              >
+              <NavLink to="/contact" className="hover-underline-animation">
                 CONTACT
               </NavLink>
             </ul>
