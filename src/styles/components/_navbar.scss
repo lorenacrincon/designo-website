@@ -3,7 +3,7 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: 2px;
   color: white;
 }
@@ -23,7 +23,7 @@
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 1px;
+  height: 0.5px;
   bottom: 0;
   left: 0;
   background-color: var(--darkGrey);
@@ -31,7 +31,8 @@
   transition: transform 0.25s ease-out;
 }
 
-.hover-underline-animation:hover:after {
+.hover-underline-animation:hover:after,
+.footer-hover-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

@@ -20,12 +20,7 @@ function Navbar() {
         <div className="mx-6 py-9 relative md:px-0 md:mx-10 md:py-14">
           <div className="flex items-center justify-between">
             <NavLink to="/">
-              <motion.img
-                whileHover={{ scale: 1.1 }}
-                className="w-[202px] "
-                src={logo}
-                alt="Logo"
-              />
+              <img className="w-[202px] " src={logo} alt="Logo" />
             </NavLink>
             <ul className="hidden md:flex md:justify-end md:items-center text-white nav-text gap-10 md:gap-10">
               <NavLink

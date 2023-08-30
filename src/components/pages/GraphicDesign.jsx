@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { graphic } from "../../data.json";
+import { motion } from "framer-motion";
 import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
 import GetInTouch from "../common/GetInTouch";
 
@@ -26,29 +27,42 @@ function GraphicDesign() {
         <div className="hidden xl:block bg-shape left-0 top-96 absolute z-0"></div>
         <section className="relative z-10 max-w-6xl mx-auto px-6 mb-10 gap-6 space-y-10 md:px-10 xl:px-10 xl:grid xl:grid-cols-3 xl:space-y-0 xl:gap-9">
           {graphicdesigns.map((item, index) => (
-            <div
+            <motion.div
+              whileHover={{
+                backgroundColor: "var(--peach)",
+              }}
               key={index}
-              className="font-jost rounded-[15px] overflow-hidden lightPeach-bg shadow-lg md:max-w-full md:flex xl:block"
+              className="group font-jost rounded-[15px] overflow-hidden lightPeach-bg shadow-lg md:max-w-full md:flex xl:block "
             >
               <img className="w-full md:w-1/2 xl:w-full" src={item.image} />
-              <div className="text-center py-10 px-6 md:flex md:flex-col md:justify-center">
-                <div className="mb-2 card-title uppercase">{item.name}</div>
-                <p className="dark-text text-base">{item.description}</p>
+              <div className="text-center py-10 px-6 md:flex md:flex-col md:justify-center ">
+                <p className="mb-2 uppercase card-title group-hover:text-white">
+                  {item.name}
+                </p>
+                <p className="dark-text text-base group-hover:text-white">
+                  {item.description}
+                </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </section>
         <section className="relative z-10 max-w-6xl mx-auto">
           <div className="pt-10 pb-80 mx-6 flex flex-wrap justify-center items-center text-center gap-7 md:mx-10 xl:flex-nowrap">
             <Link
               to="/app-design"
-              className="w-full"
+              className="w-full h-full"
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
             >
               <div className="box app-design-box py-[90px] space-y-2">
-                <h3 className="box-title">APP DESIGN</h3>
+                <motion.div
+                  className="box-bg top-0"
+                  whileHover={{
+                    backgroundColor: "hsl(11, 73%, 66%,0.8)",
+                  }}
+                ></motion.div>
+                <h3 className=" box-title">APP DESIGN</h3>
                 <div className="flex justify-center items-center gap-4">
                   <p className="box-subtitle">VIEW PROJECTS</p>
                   <img src={arrow} alt="arrow" />
@@ -57,12 +71,18 @@ function GraphicDesign() {
             </Link>
             <Link
               to="/web-design"
-              className="w-full"
+              className="w-full h-full"
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
             >
               <div className="box web-design-box py-[90px] space-y-2">
+                <motion.div
+                  className="box-bg top-0"
+                  whileHover={{
+                    backgroundColor: "hsl(11, 73%, 66%,0.8)",
+                  }}
+                ></motion.div>
                 <h3 className="box-title">WEB DESIGN</h3>
                 <div className="flex justify-center items-center gap-4">
                   <p className="box-subtitle">VIEW PROJECTS</p>

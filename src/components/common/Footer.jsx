@@ -1,10 +1,7 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import logo from "../../assets/images/shared/desktop/logo-light.png";
-import facebook from "../../assets/images/shared/desktop/icon-facebook.svg";
-import youtube from "../../assets/images/shared/desktop/icon-youtube.svg";
-import twitter from "../../assets/images/shared/desktop/icon-twitter.svg";
-import pinterest from "../../assets/images/shared/desktop/icon-pinterest.svg";
-import instagram from "../../assets/images/shared/desktop/icon-instagram.svg";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 function Footer() {
   return (
@@ -22,49 +19,20 @@ function Footer() {
             </Link>
             <div>
               <div className="py-8 space-y-6 md:space-y-0 md:flex md:py-0 md:gap-12 footer-link">
-                <Link to="/about-us">OUR COMPANY</Link>
-                <Link to="/locations">LOCATIONS</Link>
-                <Link to="/contact">CONTACT</Link>
+                <Link to="/about-us" className="footer-hover-animation">
+                  OUR COMPANY
+                </Link>
+                <Link to="/locations" className="footer-hover-animation">
+                  LOCATIONS
+                </Link>
+                <Link to="/contact" className="footer-hover-animation">
+                  CONTACT
+                </Link>
               </div>
             </div>
           </div>
           <hr className="hidden md:block opacity-20" />
-
-          <div className="space-y-6 pb-8 text-base px-12 md:px-0 md:flex justify-between md:text-start md:items-end md:pt-3">
-            <div className="opacity-50 ">
-              <p>
-                <span className="font-bold ">Designo Central Office</span>
-                <br />
-                3886 Wellington Street
-                <br />
-                Toronto, Ontario M9C 3J5
-              </p>
-            </div>
-            <div className="opacity-50 ">
-              <p>
-                <span className="font-bold">Contact Us (Central Office)</span>
-                <br />
-                P : +1 253-863-8967 <br />M : contact@designo.co
-              </p>
-            </div>
-            <div className="pt-5  flex justify-center md:items-end gap-5 ">
-              <a href="#">
-                <img src={facebook} alt="facebook" />
-              </a>
-              <a href="#">
-                <img src={youtube} alt="facebook" />
-              </a>
-              <a href="#">
-                <img src={twitter} alt="facebook" />
-              </a>
-              <a href="#">
-                <img src={pinterest} alt="facebook" />
-              </a>
-              <a href="#">
-                <img src={instagram} alt="facebook" />
-              </a>
-            </div>
-          </div>
+          <SocialMediaIcons />
         </div>
       </footer>
     </>

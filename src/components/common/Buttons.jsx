@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const btnHover = {
   color: "white",
@@ -8,9 +9,16 @@ const btnHover = {
 
 export const GetInTouchBtn = () => {
   return (
-    <motion.button whileHover={btnHover} className="white-btn">
-      GET IN TOUCH
-    </motion.button>
+    <Link
+      to="/contact"
+      onClick={() => {
+        window.scrollTo(0, 0);
+      }}
+    >
+      <motion.button whileHover={btnHover} className="white-btn">
+        GET IN TOUCH
+      </motion.button>
+    </Link>
   );
 };
 

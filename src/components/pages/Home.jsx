@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import GetInTouch from "../common/GetInTouch";
 import { LearnMoreBtn } from "../common/Buttons";
@@ -7,10 +8,6 @@ import passionate from "../../assets/images/home/desktop/illustration-passionate
 import resourceful from "../../assets/images/home/desktop/illustration-resourceful.svg";
 import friendly from "../../assets/images/home/desktop/illustration-friendly.svg";
 import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
-
-import webDesignSmall from "../../assets/images/home/mobile/image-web-design.jpg";
-import webDesignmedium from "../../assets/images/home/tablet/image-web-design.jpg";
-import webDesignLarge from "../../assets/images/home/desktop/image-web-design-large.jpg";
 
 function Home() {
   return (
@@ -39,32 +36,30 @@ function Home() {
         <div className="hidden xl:block bg-shape left-0 top-96 absolute z-0"></div>
         <section className="relative z-40">
           <div className="py-28 mx-6 md:mx-10 flex flex-col justify-center items-center text-center gap-7 xl:grid xl:grid-cols-2 xl:py-36">
-            <motion.a
-              whileHover={{
-                backgroundColor: "hsl(11, 73%, 66%,0.6)",
-                borderRadius: "15px",
-              }}
+            <Link
               to="/web-design"
-              className="w-full h-full relative"
+              className="w-full h-full"
               onClick={(e) => {
                 window.scrollTo(0, 0);
               }}
             >
-              <div className="flex flex-col justify-center items-center box web-design-box py-[90px] space-y-2 xl:h-full">
+              <div className="box web-design-box flex flex-col justify-center items-center py-[90px] space-y-2 xl:h-full ">
+                <motion.div
+                  className="box-bg"
+                  whileHover={{
+                    backgroundColor: "hsl(11, 73%, 66%,0.8)",
+                  }}
+                ></motion.div>
                 <h3 className="box-title">WEB DESIGN</h3>
                 <div className="flex justify-center items-center gap-4">
                   <p className="box-subtitle">VIEW PROJECTS</p>
                   <img src={arrow} alt="arrow" />
                 </div>
               </div>
-            </motion.a>
+            </Link>
 
             <div className="xl:py-0 w-full flex flex-wrap gap-7">
-              <motion.a
-                whileHover={{
-                  backgroundColor: "hsl(11, 73%, 66%,0.6)",
-                  borderRadius: "15px",
-                }}
+              <Link
                 to="/app-design"
                 className="w-full"
                 onClick={() => {
@@ -72,18 +67,20 @@ function Home() {
                 }}
               >
                 <div className="box app-design-box py-[90px] space-y-2">
+                  <motion.div
+                    className="box-bg top-0"
+                    whileHover={{
+                      backgroundColor: "hsl(11, 73%, 66%,0.8)",
+                    }}
+                  ></motion.div>
                   <h3 className="box-title">APP DESIGN</h3>
                   <div className="flex justify-center items-center gap-4">
                     <p className="box-subtitle">VIEW PROJECTS</p>
                     <img src={arrow} alt="arrow" />
                   </div>
                 </div>
-              </motion.a>
-              <motion.a
-                whileHover={{
-                  backgroundColor: "hsl(11, 73%, 66%,0.6)",
-                  borderRadius: "15px",
-                }}
+              </Link>
+              <Link
                 to="/graphic-design"
                 className="w-full"
                 onClick={() => {
@@ -91,13 +88,19 @@ function Home() {
                 }}
               >
                 <div className="box graphic-design-box py-[90px] space-y-2">
+                  <motion.div
+                    className="box-bg top-0"
+                    whileHover={{
+                      backgroundColor: "hsl(11, 73%, 66%,0.8)",
+                    }}
+                  ></motion.div>
                   <h3 className="box-title">GRAPHIC DESIGN</h3>
                   <div className="flex justify-center items-center gap-4">
                     <p className="box-subtitle">VIEW PROJECTS</p>
                     <img src={arrow} alt="arrow" />
                   </div>
                 </div>
-              </motion.a>
+              </Link>
             </div>
           </div>
         </section>

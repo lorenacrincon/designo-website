@@ -7,10 +7,29 @@ footer {
   a {
     font-family: Jost;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 22px;
     letter-spacing: 2px;
     color: var(--lightGrey);
   }
+}
+
+.footer-hover-animation {
+  display: inline-block;
+  position: relative;
+  color: var(--white);
+}
+
+.footer-hover-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.5px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
 @media only screen and (min-width: 768px) {
