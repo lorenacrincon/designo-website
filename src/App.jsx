@@ -1,19 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
-import Navbar from "./components/common/Navbar";
-import Home from "../src/components/pages/Home";
-import Footer from "./components/common/Footer";
-import WebDesign from "./components/pages/WebDesign";
-import AppDesign from "./components/pages/AppDesign";
-import GraphicDesign from "./components/pages/GraphicDesign";
-import AboutUs from "./components/pages/AboutUs";
-import Locations from "./components/pages/Locations";
-import Contact from "./components/pages/Contact";
+import Navbar from "./components/common/navbar/Navbar";
+import Home from "../src/components/pages/home/Home";
+import Footer from "./components/common/footer/Footer";
+import WebDesign from "./components/pages/design/WebDesign";
+import AppDesign from "./components/pages/design/AppDesign";
+import GraphicDesign from "./components/pages/design/GraphicDesign";
+import AboutUs from "./components/pages/about_us/AboutUs";
+import Locations from "./components/pages/locations/Locations";
+import Contact from "./components/pages/contact/Contact";
 
 function App() {
-  const [selectedLink, setSelectedLink] = useState("");
-
   return (
     <>
       <Navbar />

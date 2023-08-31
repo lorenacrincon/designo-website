@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import PageTitle from "../common/PageTitle";
-import { web } from "../../data.json";
+import PageTitle from "../../common/PageTitle";
+import { web } from "../../../data.json";
 import { Link } from "react-router-dom";
-import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
-import GetInTouch from "../common/GetInTouch";
+import arrow from "../../../assets/images/shared/desktop/icon-right-arrow.svg";
+import GetInTouch from "../../common/GetInTouch";
 import { motion } from "framer-motion";
 
 function WebDesign() {

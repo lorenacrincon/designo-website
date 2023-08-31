@@ -1,6 +1,6 @@
-import PageTitle from "../common/PageTitle";
+import PageTitle from "../../common/PageTitle";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import GetInTouch from "../common/GetInTouch";
+import GetInTouch from "../../common/GetInTouch";
 
 function Locations() {
   const pageTitle = "Designo / Our Locations";

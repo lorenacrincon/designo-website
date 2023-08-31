@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { SubmitBtn } from "./Buttons";
-import errorIcon from "../../assets/images/contact/desktop/icon-error.svg";
+import { SubmitBtn } from "../../common/Buttons";
+import errorIcon from "../../../assets/images/contact/desktop/icon-error.svg";
 import * as Yup from "yup";
 
 const initialValues = { name: "", email: "", phone: "", message: "" };

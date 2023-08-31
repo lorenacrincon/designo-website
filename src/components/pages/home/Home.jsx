@@ -1,20 +1,26 @@
+import React from "react";
 import { Link } from "react-router-dom";
-import PageTitle from "../common/PageTitle";
+import PageTitle from "../../common/PageTitle";
 import { motion } from "framer-motion";
-import GetInTouch from "../common/GetInTouch";
-import { LearnMoreBtn } from "../common/Buttons";
-import phone from "../../assets/images/home/desktop/image-hero-phone.png";
-import passionate from "../../assets/images/home/desktop/illustration-passionate.svg";
-import resourceful from "../../assets/images/home/desktop/illustration-resourceful.svg";
-import friendly from "../../assets/images/home/desktop/illustration-friendly.svg";
-import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
+import GetInTouch from "../../common/GetInTouch";
+import { LearnMoreBtn } from "../../common/Buttons";
+import phone from "../../../assets/images/home/desktop/image-hero-phone.png";
+import passionate from "../../../assets/images/home/desktop/illustration-passionate.svg";
+import resourceful from "../../../assets/images/home/desktop/illustration-resourceful.svg";
+import friendly from "../../../assets/images/home/desktop/illustration-friendly.svg";
+import arrow from "../../../assets/images/shared/desktop/icon-right-arrow.svg";
+import { Animation } from "../../common/Animations";
 
 function Home() {
   const pageTitle = "Designo / Home";
   return (
     <>
       <PageTitle title={pageTitle} />
-      <header className="max-w-6xl mx-auto relative z-10">
+      <motion.header
+        className="max-w-6xl mx-auto relative z-10"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
         <div className="relative home-header pb-80 md:pb-[470px] md:rounded-[15px] md:mx-10 xl:pb-36">
           <div className="font-jost text-white text-center pt-20 flex flex-col px-6 gap-6 xl:text-start xl:px-24 xl:pt-36 xl:flex-row ">
             <div className="space-y-5 md:px-20 md:space-y-7  xl:px-0 xl:basis-7/12">
@@ -33,10 +39,10 @@ function Home() {
             <img className="mx-auto xl:m-0" src={phone} alt="Phone" />
           </div>
         </div>
-      </header>
+      </motion.header>
       <main className="font-jost max-w-6xl mx-auto ">
         <div className="hidden xl:block bg-shape left-0 top-96 absolute z-0"></div>
-        <section className="relative z-40">
+        <Animation>
           <div className="py-28 mx-6 md:mx-10 flex flex-col justify-center items-center text-center gap-7 xl:grid xl:grid-cols-2 xl:py-36">
             <Link
               to="/web-design"
@@ -105,8 +111,8 @@ function Home() {
               </Link>
             </div>
           </div>
-        </section>
-        <section className="relative z-10">
+        </Animation>
+        <Animation>
           <div className="mx-6 md:mx-10 flex flex-wrap  justify-center items-center text-center md:text-start gap-20 pb-80 xl:flex-nowrap xl:text-center xl:gap-12">
             <div className="space-y-6 md:flex md:gap-14 xl:flex-col xl:space-y-0 xl:gap-5">
               <img
@@ -161,7 +167,7 @@ function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </Animation>
         <div className="hidden xl:block bg-shape right-0 -bottom-[1400px]  absolute z-0 rotate-180"></div>
         <section className="relative z-10">
           <GetInTouch />

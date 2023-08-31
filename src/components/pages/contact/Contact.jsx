@@ -1,6 +1,6 @@
-import PageTitle from "../common/PageTitle";
-import Countries from "../common/Countries";
-import ContactForm from "../common/ContactForm";
+import PageTitle from "../../common/PageTitle";
+import Countries from "../locations/Countries";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   const pageTitle = "Designo / Contact Us";

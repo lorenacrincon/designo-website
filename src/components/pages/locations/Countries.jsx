@@ -1,8 +1,8 @@
 import React from "react";
-import canada from "../../assets/images/shared/desktop/illustration-canada.svg";
-import australia from "../../assets/images/shared/desktop/illustration-australia.svg";
-import unitedKingdom from "../../assets/images/shared/desktop/illustration-united-kingdom.svg";
-import { LocationBtn } from "../common/Buttons";
+import canada from "../../../assets/images/shared/desktop/illustration-canada.svg";
+import australia from "../../../assets/images/shared/desktop/illustration-australia.svg";
+import unitedKingdom from "../../../assets/images/shared/desktop/illustration-united-kingdom.svg";
+import { LocationBtn } from "../../common/Buttons";
 
 function Countries() {
   return (
