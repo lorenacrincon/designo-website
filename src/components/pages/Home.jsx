@@ -1,5 +1,5 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import PageTitle from "../common/PageTitle";
 import { motion } from "framer-motion";
 import GetInTouch from "../common/GetInTouch";
 import { LearnMoreBtn } from "../common/Buttons";
@@ -10,8 +10,10 @@ import friendly from "../../assets/images/home/desktop/illustration-friendly.svg
 import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
 
 function Home() {
+  const pageTitle = "Designo / Home";
   return (
     <>
+      <PageTitle title={pageTitle} />
       <header className="max-w-6xl mx-auto relative z-10">
         <div className="relative home-header pb-80 md:pb-[470px] md:rounded-[15px] md:mx-10 xl:pb-36">
           <div className="font-jost text-white text-center pt-20 flex flex-col px-6 gap-6 xl:text-start xl:px-24 xl:pt-36 xl:flex-row ">

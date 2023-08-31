@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PageTitle from "../common/PageTitle";
 import { web } from "../../data.json";
 import { Link } from "react-router-dom";
 import arrow from "../../assets/images/shared/desktop/icon-right-arrow.svg";
@@ -7,9 +8,11 @@ import { motion } from "framer-motion";
 
 function WebDesign() {
   const [webdesigns] = useState(web);
+  const pageTitle = "Designo / Web Design";
 
   return (
     <>
+      <PageTitle title={pageTitle} />
       <header className="relative z-10 max-w-6xl mx-auto mb-16">
         <div className="web-design-header md:rounded-[15px] md:mx-10 ">
           <div className="font-jost text-white text-center py-28 flex flex-col px-6 gap-6">

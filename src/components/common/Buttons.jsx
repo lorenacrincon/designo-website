@@ -32,9 +32,16 @@ export const LearnMoreBtn = () => {
 
 export const LocationBtn = () => {
   return (
-    <motion.button whileHover={btnHover} className="peach-btn ">
-      SEE LOCATION
-    </motion.button>
+    <Link
+      to="/locations"
+      onClick={(e) => {
+        window.scrollTo(0, 0);
+      }}
+    >
+      <motion.button whileHover={btnHover} className="peach-btn mt-3">
+        SEE LOCATION
+      </motion.button>
+    </Link>
   );
 };
 
