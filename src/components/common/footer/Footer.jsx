@@ -9,7 +9,7 @@ function Footer() {
         <div className="max-w-6xl mx-auto xl:px-10">
           <div className="md:flex justify-between items-center md:py-10">
             <Link
-              to="/"
+              to="/designo-website"
               onClick={(e) => {
                 window.scrollTo(0, 0);
               }}
