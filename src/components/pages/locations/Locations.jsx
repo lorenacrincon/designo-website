@@ -12,7 +12,7 @@ function Locations() {
       <main className="relative z-10 max-w-6xl mx-auto ">
         <Reveal>
           <section className="mb-80 relative z-10">
-            <div className="text-white font-jost overflow-hidden md:mx-10 md:mb-20 xl:flex xl:gap-8 xl:mb-0 xl:mb-8">
+            <div className="text-white font-jost overflow-hidden md:mx-10 md:mb-20 xl:flex xl:gap-8 xl:mb-8">
               <div className="order-last">
                 <MapContainer
                   center={[43.64415216708339, -79.39463595974301]}
@@ -49,7 +49,7 @@ function Locations() {
                 </div>
               </div>
             </div>
-            <div className="text-white font-jost overflow-hidden md:mx-10 md:mb-20 xl:flex xl:gap-8 xl:mb-0 xl:mb-8">
+            <div className="text-white font-jost overflow-hidden md:mx-10 md:mb-20 xl:flex xl:gap-8 xl:mb-8">
               <div>
                 <MapContainer
                   center={[-30.3294471519584, 149.79057089813188]}
