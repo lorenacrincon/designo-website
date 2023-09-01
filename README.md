@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./mockup-web-desktops.png)
-![](./mockup-web-mobile.png)
+![](./public/mockup-web-desktops.png)
+![](./public/mockup-web-mobile.png)
 
 ### Links
 
