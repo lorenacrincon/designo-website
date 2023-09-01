@@ -3,7 +3,7 @@ import PageTitle from "../../common/PageTitle";
 import { Link } from "react-router-dom";
 import { app } from "../../../data.json";
 import { motion } from "framer-motion";
-import arrow from "../../../assets/images/shared/desktop/icon-right-arrow.svg";
+import arrow from "/assets/images/shared/desktop/icon-right-arrow.svg";
 import {
   ScrollAnimation,
   AnimationX,

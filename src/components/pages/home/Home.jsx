@@ -4,11 +4,11 @@ import PageTitle from "../../common/PageTitle";
 import { motion } from "framer-motion";
 import GetInTouch from "../../common/GetInTouch";
 import { LearnMoreBtn } from "../../common/Buttons";
-import phone from "../../../assets/images/home/desktop/image-hero-phone.png";
-import passionate from "../../../assets/images/home/desktop/illustration-passionate.svg";
-import resourceful from "../../../assets/images/home/desktop/illustration-resourceful.svg";
-import friendly from "../../../assets/images/home/desktop/illustration-friendly.svg";
-import arrow from "../../../assets/images/shared/desktop/icon-right-arrow.svg";
+import phone from "/assets/images/home/desktop/image-hero-phone.png";
+import passionate from "/assets/images/home/desktop/illustration-passionate.svg";
+import resourceful from "/assets/images/home/desktop/illustration-resourceful.svg";
+import friendly from "/assets/images/home/desktop/illustration-friendly.svg";
+import arrow from "/assets/images/shared/desktop/icon-right-arrow.svg";
 import { Reveal, ScrollAnimation } from "../../common/Animations";
 
 function Home() {

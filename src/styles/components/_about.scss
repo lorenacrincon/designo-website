@@ -1,5 +1,5 @@
 .about-header {
-  background-image: url(".././assets/images/about/mobile/bg-pattern-hero-about-mobile.svg");
+  background-image: url("/assets/images/about/mobile/bg-pattern-hero-about-mobile.svg");
   background-color: var(--peach);
   background-size: 200%;
   background-position: -120px -70px;
@@ -11,7 +11,7 @@
 }
 
 .talent-bg {
-  background-image: url(".././assets/images/shared/desktop/bg-pattern-three-circles.svg");
+  background-image: url("/assets/images/shared/desktop/bg-pattern-three-circles.svg");
   background-color: var(--lighterPeach);
   background-size: 150%;
 
@@ -52,7 +52,7 @@
 
 @media only screen and (min-width: 1280px) {
   .about-header {
-    background-image: url(".././assets/images/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-image: url("/assets/images/about/desktop/bg-pattern-hero-about-desktop.svg");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;

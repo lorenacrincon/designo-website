@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/shared/desktop/logo-light.png";
+import logo from "/assets/images/shared/desktop/logo-light.png";
 import SocialMediaIcons from "./SocialMediaIcons";
 
 function Footer() {
