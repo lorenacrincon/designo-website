@@ -1,4 +1,6 @@
 {
+  "name": "designo-website",
+  "homepage": "https://lorenacrincon.github.io/designo-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
