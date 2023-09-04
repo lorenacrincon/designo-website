@@ -1,10 +1,10 @@
 import aboutHeroMobile from "/assets/images/about/mobile/image-about-hero-mobile.jpg";
 import aboutHeroTablet from "/assets/images/about/tablet/image-about-hero-tablet.jpg";
-import aboutHeroDesktop from "/assets/images/about/desktop/image-about-hero-desktop.jpg";
+import aboutHeroDesktop from "/assets/images/about/desktop/image-about-hero.jpg";
 
 import talentMobile from "/assets/images/about/mobile/image-world-class-talent-mobile.jpg";
 import talentTablet from "/assets/images/about/tablet/image-world-class-talent-tablet.jpg";
-import talentDesktop from "/assets/images/about/desktop/image-world-class-talent-desktop.jpg";
+import talentDesktop from "/assets/images/about/desktop/image-world-class-talent.jpg";
 
 import realDealMobile from "/assets/images/about/mobile/image-real-deal-mobile.jpg";
 import realDealTablet from "/assets/images/about/tablet/image-real-deal-tablet.jpg";
