@@ -8,7 +8,7 @@ import talentDesktop from "/assets/images/about/desktop/image-world-class-talent
 
 import realDealMobile from "/assets/images/about/mobile/image-real-deal-mobile.jpg";
 import realDealTablet from "/assets/images/about/tablet/image-real-deal-tablet.jpg";
-import realDealDesktop from "/assets/images/about/Desktop/image-real-deal-desktop.jpg";
+import realDealDesktop from "/assets/images/about/desktop/image-real-deal-desktop.jpg";
 
 import PageTitle from "../../common/PageTitle";
 import Countries from "../locations/Countries";
